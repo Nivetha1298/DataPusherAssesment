@@ -11,4 +11,3 @@ export class Form {
   @Column()
   phoneNumber: string;
 }
-

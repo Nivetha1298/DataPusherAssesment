@@ -1,11 +1,11 @@
 // src/dao/formDao.ts
-import { createConnection } from "typeorm";
+import { getConnection } from "typeorm";
 import { Form } from "../entity/Form";
 
 const formDao = {
   createForm: async (form: Form) => {
     try {
-      const connection = await createConnection();
+      const connection = getConnection();
       const formRepository = connection.getRepository(Form);
       await formRepository.save(form);
     } catch (error) {
