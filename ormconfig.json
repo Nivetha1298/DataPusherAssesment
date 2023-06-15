@@ -1,0 +1,13 @@
+{
+    "type": "sqlite",
+    "database": "/home/laptop-obs-261/Desktop/assesment Backend/database.sqlite",
+    "synchronize": true,
+    "logging": false,
+    "entities": ["src/entity/**/*.ts"],
+    "migrations": ["src/migrations/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations"
+    }
+  }
+  
